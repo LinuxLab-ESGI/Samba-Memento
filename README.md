@@ -62,7 +62,7 @@ Then, enter the password of the user.
 
 ## III - Access to the Samba server
 
-To access to your samba server, you will need to get the name of your Samba configuration (in this example : MyAwesomeSambaServer) and the NetBios name or the IP address of the server. This access depend of the operating system.
+To access to your samba server, you will need to get the name of your Samba configuration (in this example : MyAwesomeSambaServer) and the NetBios name or the IP address of the server. This access depends of the operating system.
 
 
 ### On Windows :
