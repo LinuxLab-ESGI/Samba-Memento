@@ -80,4 +80,4 @@ Follow this tutorial : <i>https://www.riohondo.edu/its/how-to-connect-to-a-netwo
 Follow this tutorial : https://www.ghacks.net/2009/11/04/connect-to-your-samba-server-from-linux/
 
 __________
-Updated : 06/02/2021, Author : Xen0rInspire
+<i>Updated : 06/02/2021, Author : Xen0rInspire</i>
