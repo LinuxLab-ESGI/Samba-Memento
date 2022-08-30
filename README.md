@@ -11,7 +11,7 @@ apt install samba -y
 ```
 <i>For Debian distributions or</i>
 ```
-yum install samba -y
+dnf install samba -y
 ```
 <i>For RedHat ones</i>
 
@@ -80,4 +80,4 @@ Follow this tutorial : <i>https://www.riohondo.edu/its/how-to-connect-to-a-netwo
 Follow this tutorial : https://www.ghacks.net/2009/11/04/connect-to-your-samba-server-from-linux/
 
 __________
-<i>Updated : 06/02/2021, Author : Xen0rInspire</i>
+<i>Updated : 30/08/2022, Author : Xen0rInspire</i>
