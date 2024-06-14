@@ -50,7 +50,7 @@ Finally, restart the Samba server to load our configuration changes :
 sudo systemctl restart smbd
 ```
 
-## II - Authentification to the Samba server
+## II - Authentication to the Samba server
 
 To add a minimum of security, we will create a user with a password to prevent not authorized access to our Samba server. First, enter the command :
 
@@ -80,4 +80,4 @@ Follow this tutorial : <i>https://www.riohondo.edu/its/how-to-connect-to-a-netwo
 Follow this tutorial : https://www.ghacks.net/2009/11/04/connect-to-your-samba-server-from-linux/
 
 __________
-<i>Updated : 30/08/2022, Author : Xen0rInspire</i>
+<i>Updated : 14/06/2024, Author : Xen0rInspire</i>
