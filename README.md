@@ -6,25 +6,25 @@ __________
 
 You can install Samba via these commands :
 
+<i>For Debian distributions :</i>
 ```
 apt install samba -y
 ```
-<i>For Debian distributions or</i>
+
+<i>For RedHat ones :</i>
 ```
 dnf install samba -y
 ```
-<i>For RedHat ones</i>
 
 Of course, your equipment must be connected on a LAN and preferably with a static address.
 
->In fact, it will much easier to access to the samba server if the equipment has a static address not provided by a DHCP server.
+>In fact, it will be easier to use and configure the Samba server if the equipment has a static address not provided by a DHCP server.
 
 ## I - Create a Samba server
 
-Once Samba is downloaded, you have to create the directory where you want users have to access. With *mkdir* command create the folder. For the example, we will use the directory <b>/home/pi/shared/public</b>.
+Once the Samba server is installed, create the directory where you want users have to access. With the *mkdir* command create the directory. As an example, we will use <b>/home/pi/shared/public</b>.
 
-Then, open with nano or vim the configuration file <u>/etc/samba/smb.conf</u>.
-Add the following lines : 
+Then, edit the configuration file <b>/etc/samba/smb.conf</b> and add the following lines : 
 
 ```
 [MyAwesomeSambaServer]
@@ -43,9 +43,9 @@ path| Directory of the folder we created before. |
 writeable| When this option is set to “Yes“, it will allow the folder to be writable. |
 create mask| This option defines the maximum permissions for files. |
 directory mask| This option defines the maximum permissions for folders. |
-public| If this is set to “no” the Samba server will require a valid user to grant access to the shared folder. |
+public| If this is set to “no” the Samba server will require a valid user to grant access to the shared folder. I beg you to set the "no" value ! |
 
-Finally, restart the Samba server to load our configuration changes :
+Finally, restart the Samba server to load the new configuration :
 ```
 sudo systemctl restart smbd
 ```
@@ -62,7 +62,7 @@ Then, enter the password of the user.
 
 ## III - Access to the Samba server
 
-To access to your samba server, you will need to get the name of your Samba configuration (in this example : MyAwesomeSambaServer) and the NetBios name or the IP address of the server. This access depends of the operating system.
+To access to your Samba server, you will need to get the name of your Samba configuration (in this example : MyAwesomeSambaServer) and the NetBios name or the IP address of the server. This access depends of the operating system.
 
 
 ### On Windows :
@@ -80,4 +80,4 @@ Follow this tutorial : <i>https://www.riohondo.edu/its/how-to-connect-to-a-netwo
 Follow this tutorial : https://www.ghacks.net/2009/11/04/connect-to-your-samba-server-from-linux/
 
 __________
-<i>Updated : 14/06/2024, Author : Xen0rInspire</i>
+<i>Updated : 17/06/2024, Author : Xen0rInspire</i>
